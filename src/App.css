@@ -1,0 +1,118 @@
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: black;
+  background-color: rgb(160, 160, 118);
+  display: inline-block;
+  cursor: pointer; /* "hand" cursor */
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  padding: 10px;
+  border: 1px solid rgb(153, 151, 151);
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  text-align: center;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: rgb(161, 161, 154);
+  outline: 1px dotted white;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper:hover {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  opacity: 0;
+}
+
+.btnstyle {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(111, 158, 111);
+  width: 200px !important;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  padding: 10px;
+  border: 1px solid rgb(150, 150, 126);
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  text-align: center;
+}
+.boldtext {
+  font-weight: bold;
+}
